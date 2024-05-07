@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxcu1kbalsw4i"]
+
+[ext_resource type="Script" path="res://scripts/CityLake.gd" id="1_tu3k5"]
+[ext_resource type="PackedScene" uid="uid://bam6duu55jypp" path="res://scenes/characters/player.tscn" id="2_i3f2m"]
+[ext_resource type="Texture2D" uid="uid://b4qvsr7bbivpu" path="res://assets/interface/Cidade/CidadeAgua.png" id="3_bmoj0"]
+[ext_resource type="Script" path="res://scenes/Timer.gd" id="4_apyne"]
+[ext_resource type="PackedScene" uid="uid://st0kh1kiu4gf" path="res://scenes/pause.tscn" id="5_k7u2j"]
+
+[node name="CityLake" type="Node2D"]
+position = Vector2(533, 391)
+script = ExtResource("1_tu3k5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+position = Vector2(144, 107)
+
+[node name="Left_Limit" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-1211, 113, -1284, 113, -1289, 1010, -1256, 1007, -1256, 142, -1210, 144)
+
+[node name="Bottom_Left_Limit" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-1290, 967, 1397, 965, 1434, 1024, -1285, 1012)
+
+[node name="Escada_direita_limit" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(1695, 339, 1696, 580, 2256, 583, 2258, 340)
+
+[node name="Watter_Limit" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(1613, 348, 1535, 343, 1447, 222, 1129, 233, 1367, 575, 1133, 577, 1426, 1016, 2154, 1009, 1937, 697, 1612, 696, 1540, 590, 1607, 585)
+
+[node name="Top_Limit" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-1205, 109, -1047, 343, -321, 347, -161, 577, 367, 577, 365, 281, 243, 111, 2095, 113, 2255, 339, 2263, 467, 2899, 457, 3227, 921, 3751, 923, 3746, -445, -1302, -432, -1286, 112)
+
+[node name="Bottom_Right_Limit" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(3746, 1006, 2134, 994, 2134, 1020, 3801, 1027, 3764, 901)
+
+[node name="Player" parent="." instance=ExtResource("2_i3f2m")]
+top_level = true
+position = Vector2(-219, 1191)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-57, -25)
+limit_left = -1275
+limit_top = 0
+limit_right = 4500
+limit_bottom = 1900
+
+[node name="pause" parent="Player/Camera2D" instance=ExtResource("5_k7u2j")]
+visible = false
+offset_left = -3.0
+offset_top = -11.0
+offset_right = -3.0
+offset_bottom = -11.0
+
+[node name="CidadeAgua" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1376, 391)
+scale = Vector2(5.037, 7.275)
+texture = ExtResource("3_bmoj0")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+script = ExtResource("4_apyne")
+
+[connection signal="quit" from="Player/Camera2D/pause" to="." method="_quit"]
+[connection signal="resume" from="Player/Camera2D/pause" to="." method="_pause_menu"]
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]

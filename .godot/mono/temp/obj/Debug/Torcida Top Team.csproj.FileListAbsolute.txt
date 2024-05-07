@@ -1,0 +1,18 @@
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/bin/Debug/Torcida Top Team.deps.json
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/bin/Debug/Torcida Top Team.runtimeconfig.json
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/bin/Debug/Torcida Top Team.dll
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/bin/Debug/Torcida Top Team.pdb
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida Top Team.csproj.AssemblyReference.cache
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida Top Team.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida Top Team.AssemblyInfoInputs.cache
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida Top Team.AssemblyInfo.cs
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida Top Team.csproj.CoreCompileInputs.cache
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida Top Team.sourcelink.json
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida .08D911B5.Up2Date
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida Top Team.dll
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/refint/Torcida Top Team.dll
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida Top Team.pdb
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/Torcida Top Team.genruntimeconfig.cache
+/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/.godot/mono/temp/obj/Debug/ref/Torcida Top Team.dll

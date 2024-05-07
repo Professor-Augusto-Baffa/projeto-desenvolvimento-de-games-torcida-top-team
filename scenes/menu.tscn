@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://f18seo5ojxpf"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_qxcie"]
+[ext_resource type="Texture2D" uid="uid://b5mub16sp5d0s" path="res://menu/menuFInal.png" id="2_dbxko"]
+[ext_resource type="AudioStream" uid="uid://cbjm7mvp6t7jw" path="res://assets/sound/menuSong.mp3" id="3_mlw4b"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_right = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qxcie")
+
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(543.5, 357)
+scale = Vector2(0.997222, 0.988889)
+texture = ExtResource("2_dbxko")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+show_behind_parent = true
+layout_direction = 1
+layout_mode = 0
+offset_left = 399.0
+offset_top = 643.0
+offset_right = 981.0
+offset_bottom = 729.0
+scale = Vector2(0.5, 0.5)
+auto_translate = false
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "                                                                                                                                      "
+icon_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_mlw4b")
+volume_db = -80.0
+autoplay = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 952.0
+offset_top = 646.0
+offset_right = 1057.0
+offset_bottom = 705.0
+
+[node name="Settings" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+text = "            
+
+"
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Settings" to="." method="_on_settings_pressed"]

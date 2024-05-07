@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy5wmqhtvo604"]
+
+[ext_resource type="Texture2D" uid="uid://ceg50wp2ljn0i" path="res://assets/item/consumable/cerveja.png" id="1_heygl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3i72o"]
+size = Vector2(34, 32)
+
+[node name="Cerveja" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(23.375, 16.125)
+scale = Vector2(0.863281, 1.17969)
+texture = ExtResource("1_heygl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(24, 15)
+shape = SubResource("RectangleShape2D_3i72o")

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "l4rYc9sa7qmrqEh1YR/WaQLNYup5XdtvVqZWxDp26svg5bNvyXkT1KmxlbL1p18Ec3NPwTZjTYpuZefZQ4B1oQ==",
+  "success": true,
+  "projectFilePath": "/home/pedro/Documents/GitHub/projeto-desenvolvimento-de-games-torcida-top-team/Torcida Top Team.csproj",
+  "expectedPackageFiles": [
+    "/home/pedro/.nuget/packages/godot.sourcegenerators/4.2.1/godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "/home/pedro/.nuget/packages/godotsharp/4.2.1/godotsharp.4.2.1.nupkg.sha512",
+    "/home/pedro/.nuget/packages/godotsharpeditor/4.2.1/godotsharpeditor.4.2.1.nupkg.sha512",
+    "/home/pedro/.nuget/packages/microsoft.netcore.app.ref/6.0.29/microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "/home/pedro/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.29/microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}

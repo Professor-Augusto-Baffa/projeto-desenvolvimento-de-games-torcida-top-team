@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://sr72ngg8msym"]
+
+[ext_resource type="Script" path="res://scenes/Urbano.gd" id="1_xt6yo"]
+[ext_resource type="PackedScene" uid="uid://bam6duu55jypp" path="res://scenes/characters/player.tscn" id="2_3u8u7"]
+[ext_resource type="PackedScene" uid="uid://st0kh1kiu4gf" path="res://scenes/pause.tscn" id="3_27d63"]
+[ext_resource type="Texture2D" uid="uid://bxef3op0qupw2" path="res://assets/interface/Cidade/Urbano_1.png" id="3_dw7fg"]
+
+[node name="Urbano" type="Node2D"]
+position = Vector2(533, 391)
+script = ExtResource("1_xt6yo")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(144, 107)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PackedVector2Array(-1591, 424, -1686, 427, -1689, -346, 3393, -349, 3403, 359, 3295, 346, 3289, 461, 3082, 461, 3003, 356, 2978, 356, 2984, 476, 2771, 467, 2670, 346, 2165, 365, 2162, 595, 290, 614, 185, 484, 34, 491, -28, 419, -28, 361, -320, 361, -325, 504, -336, 557, -334, 590, -335, 614, -1268, 622, -1288, 589, -1421, 606, -1479, 561, -1480, 493, -1529, 493)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PackedVector2Array(-1609, 455, -1720, 455, -1720, 1181, 3487, 1188, 3487, 340, 3349, 384, 3339, 1040, -825, 1090, -1632, 1084, -1676, 703)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PackedVector2Array(-251, 810, -195, 866, -45, 867, -45, 560, -99, 496, -240, 500)
+
+[node name="Player2" parent="." instance=ExtResource("2_3u8u7")]
+top_level = true
+position = Vector2(-219, 1191)
+
+[node name="Camera2D" type="Camera2D" parent="Player2"]
+position = Vector2(-57, -25)
+limit_left = -1275
+limit_top = 0
+limit_right = 4500
+limit_bottom = 1900
+
+[node name="pause" parent="Player2/Camera2D" instance=ExtResource("3_27d63")]
+visible = false
+offset_left = -3.0
+offset_top = -11.0
+offset_right = -3.0
+offset_bottom = -11.0
+
+[node name="CidadeAgua" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1004, 479)
+scale = Vector2(5.092, 7.5)
+texture = ExtResource("3_dw7fg")
