@@ -349,7 +349,7 @@ metadata/_edit_vertical_guides_ = [94.0]
 position = Vector2(-48.5, -32)
 scale = Vector2(2.96875, 3)
 sprite_frames = SubResource("SpriteFrames_e0g3a")
-animation = &"fla_idle"
+animation = &"fla_punch"
 autoplay = "fla_idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

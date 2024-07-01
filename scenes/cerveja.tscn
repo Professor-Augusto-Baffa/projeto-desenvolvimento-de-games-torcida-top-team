@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dy5wmqhtvo604"]
+[gd_scene load_steps=4 format=3 uid="uid://dy5wmqhtvo604"]
 
 [ext_resource type="Texture2D" uid="uid://ceg50wp2ljn0i" path="res://assets/item/consumable/cerveja.png" id="1_heygl"]
+[ext_resource type="Script" path="res://scenes/cerveja.gd" id="1_vqf2o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3i72o"]
 size = Vector2(34, 32)
 
 [node name="Cerveja" type="RigidBody2D"]
 gravity_scale = 0.0
+script = ExtResource("1_vqf2o")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(23.375, 16.125)

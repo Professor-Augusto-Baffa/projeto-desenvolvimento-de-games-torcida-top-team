@@ -40,7 +40,7 @@ icon_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_mlw4b")
-volume_db = -80.0
+volume_db = 3.684
 autoplay = true
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
